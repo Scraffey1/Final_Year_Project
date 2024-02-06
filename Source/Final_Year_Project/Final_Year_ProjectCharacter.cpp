@@ -9,6 +9,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "Debug_Help.h"
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -63,6 +64,8 @@ void AFinal_Year_ProjectCharacter::BeginPlay()
 		{
 			Subsystem->AddMappingContext(DefaultMappingContext, 0);
 		}
+
+		Debug::print(TEXT("Debug is working"));
 	}
 }
 
